@@ -13,7 +13,6 @@ class Map extends Component {
         lat={location.latitude}
         location_name={location.landmark_name}
         movie_name={location.movie.title}
-        //date = {location.properties.time}
         key={location.id}
       />
     ));

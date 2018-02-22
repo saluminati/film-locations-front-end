@@ -22,7 +22,7 @@ class App extends Component {
   }
 
   componentDidMount(){
-    // Fetching earth quake date on start
+    // Fetching movie list
     this.fetchMovieList();
   }
 
@@ -38,6 +38,7 @@ class App extends Component {
     });
   }
 
+  // This function makes HTTP call to the API and returns the list of movies and update the state
   fetchMovieList()
   {
     fetch(API_URL+'movies?filter[city]=SF')
@@ -51,7 +52,7 @@ class App extends Component {
   }
 
 
-  // This function makes HTTP call to the API and returns the list of earthquakes and update the state locations array
+  // This function makes HTTP call to the API and returns the list of locations and update the state
   fetchLocationData(query_params){
     fetch(API_URL+'shooting_locations?'+query_params)
     .then((result) => {
