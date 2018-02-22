@@ -17,6 +17,8 @@ $ npm install
 ```
 
 1) run the app
+
+> please change API_URL in the App.js file line number 5 to your API URL 
 ```
 $ npm start
 ```
